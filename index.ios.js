@@ -18,7 +18,7 @@ export default class DemonSegementCnt extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			segValue: ['dasd', '贞德大是哦的', 'dhisao', 'diow'],
+			segValue: ['一', '二', '三', '四'],
 		};
 	}
 	_getIndex(index) {

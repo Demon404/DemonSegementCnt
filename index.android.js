@@ -18,7 +18,7 @@ export default class DemonSegementCnt extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      segValue: ['dasd', '贞德大是哦的', 'dhisao', 'diow'],
+      segValue: ['一', '二', '三', '四'],
     };
   }
   _getIndex(index) {
@@ -29,15 +29,15 @@ export default class DemonSegementCnt extends Component {
 
     return (
       <View style={styles.container}>
-          <SegementCnt componentArray={this.state.segValue} 
-                        backGroundStyle={{marginTop:100,marginLeft:10}}
-                        itemWidth={60}
-                        itemHeight={30}
-                        valueSize={20}
+          <SegementCnt componentArray={this.state.segValue} //The itemArray
+                        backGroundStyle={{marginTop:100,marginLeft:10}} //The segement site
+                        itemWidth={60} //One item width && width is itemWidth * array.length
+                        itemHeight={30}//
+                        valueSize={20}//The item text fontSize
                         backgroundColor='green'
                         textColor='orange'
-                        valueIndex={2}
-                        getIndex={(index)=>{this._getIndex(index)}}
+                        valueIndex={2}//Set the default item
+                        getIndex={(index)=>{this._getIndex(index)}}//The method of how to get index
             />
         </View>
     );
